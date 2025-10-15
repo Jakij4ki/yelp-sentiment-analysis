@@ -1,6 +1,6 @@
-# Sentiment Analysis Yelp Restaurant
+# Business Yelp Dataset
 
-# Perbandingan Performansi Model SVM dan BERT dalam Analisis Sentimen pada Ulasan Restoran di Yelp
+# Perbandingan Performansi Model SVM (TF-IDF, Word2Vec, GloVe) dan BERT dalam Analisis Sentimen pada Ulasan Restoran di Yelp
 
 ## Latar Belakang
 Analisis sentimen digunakan untuk mengidentifikasi opini dalam teks apakah bersifat positif, negatif, atau netral. Ulasan daring seperti di Yelp berperan penting dalam membentuk reputasi dan keputusan konsumen, terutama di bidang kuliner. Karena jumlah ulasan yang terus bertambah, analisis manual tidak lagi efisien sehingga diperlukan metode berbasis kecerdasan buatan.
