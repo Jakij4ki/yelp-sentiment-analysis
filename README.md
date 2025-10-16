@@ -29,3 +29,8 @@ Melakukan penyesuaian parameter (hyperparameter tuning) atau training lanjutan p
 Mengombinasikan keunggulan model klasik (SVM dengan Word2Vec/TF-IDF) dan model transformer (BERT) untuk melihat potensi peningkatan akurasi melalui pendekatan hybrid.
 Integrasi ke sistem aplikasi nyata 
 Mengembangkan prototipe dashboard analisis sentimen yang dapat digunakan oleh pelaku bisnis restoran untuk memantau opini pelanggan secara real-time.
+
+## Credit
+This project developed by:
+- Dzaky Rezandi
+- Muhammad Faris El Hakim
