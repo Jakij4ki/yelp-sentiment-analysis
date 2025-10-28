@@ -1,36 +1,42 @@
-# Business Yelp Dataset
+# Yelp Business Dataset – Sentiment Analysis  
 
-# Perbandingan Performansi Model SVM (TF-IDF, Word2Vec, GloVe) dan BERT dalam Analisis Sentimen pada Ulasan Restoran di Yelp
+## 📌 Judul  
+Perbandingan Performa SVM (TF-IDF, Word2Vec, GloVe) dan BERT dalam Analisis Sentimen pada Ulasan Restoran Yelp
 
-## Latar Belakang
-Analisis sentimen digunakan untuk mengidentifikasi opini dalam teks apakah bersifat positif, negatif, atau netral. Ulasan daring seperti di Yelp berperan penting dalam membentuk reputasi dan keputusan konsumen, terutama di bidang kuliner. Karena jumlah ulasan yang terus bertambah, analisis manual tidak lagi efisien sehingga diperlukan metode berbasis kecerdasan buatan.
+---
 
-Metode klasik seperti SVM banyak digunakan karena sederhana dan efisien, meski sering mengandalkan TF-IDF yang terbatas dalam menangkap makna semantik. Pendekatan embedding seperti Word2Vec dan GloVe memberikan representasi kata yang lebih kaya, sementara model transformer seperti BERT lebih unggul dalam memahami konteks kalimat.
+## 📖 Latar Belakang  
+Analisis sentimen bertujuan untuk mengklasifikasikan opini dalam teks menjadi positif, negatif, atau netral. Ulasan daring seperti di Yelp memiliki pengaruh besar terhadap reputasi bisnis dan keputusan konsumen, khususnya pada sektor kuliner. Dengan jumlah ulasan yang terus bertambah, analisis manual tidak lagi efisien sehingga diperlukan pendekatan berbasis Machine Learning dan Deep Learning.  
 
-Masih sedikit penelitian yang secara langsung membandingkan SVM (TF-IDF, Word2Vec, Word2Vec Google, dan GloVe) dengan BERT (cased dan uncased) khusus pada ulasan restoran yang menggunakan bahasa informal. Penelitian ini berupaya menjembatani kesenjangan tersebut dan diharapkan dapat memberikan pemahaman lebih komprehensif sekaligus manfaat praktis bagi pelaku bisnis dalam memahami opini pelanggan.
+Metode klasik seperti SVM dengan TF-IDF populer karena sederhana dan efisien, namun terbatas dalam menangkap makna semantik. Embedding seperti Word2Vec dan GloVe memberikan representasi kata yang lebih kaya, sementara BERT mampu memahami konteks kalimat secara lebih mendalam.  
 
-## Tujuan
-1. Membandingkan performa Support Vector Machine (dengan TF-IDF, Word2Vec self-trained, Word2Vec Google pretrained, dan GloVe) dengan model BERT (cased dan uncased) dalam analisis sentimen pada ulasan Yelp.
-2. Mengevaluasi kemampuan word embedding dan model berbasis transformer dalam memahami konteks semantik serta pola bahasa.
-3. Menganalisis pengaruh ukuran dan jenis data pelatihan terhadap kualitas representasi kata pada Word2Vec (self-trained dengan dataset kecil dan besar).
-4. Membandingkan efektivitas embedding domain spesifik (Word2Vec self-trained) dengan embedding umum (Google Word2Vec dan GloVe pretrained) dalam analisis sentimen ulasan restoran.
+Masih jarang penelitian yang membandingkan secara langsung SVM (TF-IDF, Word2Vec, Word2Vec Google, GloVe) dengan BERT (cased & uncased) pada domain ulasan restoran yang cenderung bersifat informal. Penelitian ini berupaya menjembatani kesenjangan tersebut sekaligus memberikan manfaat praktis bagi pelaku bisnis dalam memahami opini pelanggan.  
 
-## Dataset
-Sumber dataset: https://business.yelp.com/data/resources/open-dataset/
+---
 
-## Future Works
-- Perbaikan dataset
-Melakukan labeling manual pada sebagian data untuk meningkatkan kualitas label, serta menambah jumlah data agar model dapat belajar lebih baik dari variasi ulasan yang lebih luas
-- Eksperimen dengan arsitektur lain
-Mencoba model transformer yang lebih ringan atau lebih baru seperti DistilBERT, RoBERTa, atau IndoBERT, serta membandingkannya dengan pendekatan lain seperti Naive Bayes atau Logistic Regression sebagai baseline tambahan.
-- Fine-tuning lebih mendalam 
-Melakukan penyesuaian parameter (hyperparameter tuning) atau training lanjutan pada domain kuliner agar BERT dapat lebih kontekstual memahami gaya bahasa ulasan restoran.
-- Eksperimen ensemble 
-Mengombinasikan keunggulan model klasik (SVM dengan Word2Vec/TF-IDF) dan model transformer (BERT) untuk melihat potensi peningkatan akurasi melalui pendekatan hybrid.
-Integrasi ke sistem aplikasi nyata 
-Mengembangkan prototipe dashboard analisis sentimen yang dapat digunakan oleh pelaku bisnis restoran untuk memantau opini pelanggan secara real-time.
+## 🎯 Tujuan  
+1. Membandingkan performa SVM (TF-IDF, Word2Vec self-trained, Word2Vec Google pretrained, GloVe) dengan BERT (cased & uncased).  
+2. Mengevaluasi kemampuan embedding klasik vs transformer dalam memahami konteks semantik.  
+3. Menganalisis pengaruh ukuran dan jenis data pada Word2Vec (small vs big dataset).  
+4. Membandingkan embedding domain-spesifik (Word2Vec self-trained) dengan embedding umum (Word2Vec Google, GloVe pretrained).  
 
-## Credit
-This project developed by:
+---
+
+## 📂 Dataset  
+Sumber dataset: [Yelp Open Dataset](https://business.yelp.com/data/resources/open-dataset/)  
+
+---
+
+## 🚀 Future Works  
+- Perbaikan dataset: labeling manual tambahan & memperbesar jumlah data.  
+- Eksperimen arsitektur lain: DistilBERT, RoBERTa, IndoBERT, serta baseline klasik lain seperti Naive Bayes & Logistic Regression.  
+- Fine-tuning lebih dalam: hyperparameter tuning & domain adaptation untuk ulasan kuliner.  
+- Ensemble model: kombinasi SVM + BERT untuk peningkatan akurasi.  
+- Implementasi aplikasi nyata: dashboard analisis sentimen real-time untuk pelaku bisnis restoran.  
+
+---
+
+## 👨‍💻 Credits  
+Project developed by:  
 - Dzaky Rezandi
 - Muhammad Faris El Hakim
